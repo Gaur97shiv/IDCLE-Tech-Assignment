@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <div id="task-input">
+        <input type="text" id="task" placeholder="Enter a task">
+        <button onclick="addTask()">Add</button>
+    </div>
+    <br>
+    <div id="todo-list">
+        <h2>To-Do</h2>
+        <table id="todo-table">
+            <!-- To-Do tasks will be inserted here dynamically -->
+        </table>
+        <h2>Done</h2>
+        <table id="done-table">
+            <!-- Done tasks will be inserted here dynamically -->
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

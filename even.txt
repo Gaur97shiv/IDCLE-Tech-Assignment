@@ -1,0 +1,25 @@
+Assignment 
+ function printEvenNumbers(start, end, count) {
+  for (let i = start; i <= end; i++) {
+    if (i % 2 === 0) {
+      console.log(i);
+      count--;
+      if (count === 0) {
+        return i + 2; 
+      }
+    }
+  }
+}
+
+let start = 1;
+let end = 100;
+let count = 5;
+
+function printEvenNumbersWithDelay() {
+  start = printEvenNumbers(start, end, count);
+  if (start <= end) {
+    setTimeout(printEvenNumbersWithDelay, 5000);
+  }
+}
+
+printEvenNumbersWithDelay();
